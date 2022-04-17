@@ -1,8 +1,6 @@
 <?php
 
-namespace Creational\FactoryMethod;
-
-use Creational\Product;
+namespace Creational\Concept\FactoryMethod;
 
 /**
  * The Creator class declares the factory method that is supposed to return an

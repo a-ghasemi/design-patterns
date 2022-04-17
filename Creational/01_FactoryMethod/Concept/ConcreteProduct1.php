@@ -1,6 +1,6 @@
 <?php
 
-namespace Creational\FactoryMethod;
+namespace Creational\Concept\FactoryMethod;
 
 /**
  * Concrete Products provide various implementations of the Product interface.
