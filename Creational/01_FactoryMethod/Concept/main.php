@@ -1,17 +1,17 @@
 <?php
 
-namespace Creational\Concept\FactoryMethod;
+namespace Creational\FactoryMethod\Concept;
 
 /**
  * The client code works with an instance of a concrete creator, albeit through
  * its base interface. As long as the client keeps working with the creator via
  * the base interface, you can pass it any creator's subclass.
  */
-function clientCode(Creator $creator)
+function clientCode(AbsCreator $creator)
 {
     // ...
     echo "Client: I'm not aware of the creator's class, but it still works.\n"
-        . $creator->someOperation();
+        . $creator->generalOperation();
     // ...
 }
 
@@ -20,8 +20,8 @@ function clientCode(Creator $creator)
  * environment.
  */
 echo "App: Launched with the ConcreteCreator1.\n";
-clientCode(new ConcreteCreator1());
+clientCode(new Creator1());
 echo "\n\n";
 
 echo "App: Launched with the ConcreteCreator2.\n";
-clientCode(new ConcreteCreator2());
+clientCode(new Creator2());

@@ -1,12 +1,12 @@
 <?php
 
-namespace Creational\Concept\FactoryMethod;
+namespace Creational\FactoryMethod\Concept;
 
 /**
  * The Product interface declares the operations that all concrete products must
  * implement.
  */
-interface Product
+interface IProduct
 {
     public function operation(): string;
 }

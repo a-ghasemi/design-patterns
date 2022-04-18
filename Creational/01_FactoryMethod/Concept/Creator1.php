@@ -1,12 +1,12 @@
 <?php
 
-namespace Creational\Concept\FactoryMethod;
+namespace Creational\FactoryMethod\Concept;
 
 /**
  * Concrete Creators override the factory method in order to change the
  * resulting product's type.
  */
-class ConcreteCreator1 extends Creator
+class Creator1 extends AbsCreator
 {
     /**
      * Note that the signature of the method still uses the abstract product
@@ -14,8 +14,8 @@ class ConcreteCreator1 extends Creator
      * method. This way the Creator can stay independent of concrete product
      * classes.
      */
-    public function factoryMethod(): Product
+    public function factoryMethod(): IProduct
     {
-        return new ConcreteProduct1();
+        return new Product1();
     }
 }

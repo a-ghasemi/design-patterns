@@ -1,19 +1,19 @@
 <?php
 
-namespace Creational\Concept\FactoryMethod;
+namespace Creational\FactoryMethod\Concept;
 
 /**
  * The Creator class declares the factory method that is supposed to return an
  * object of a Product class. The Creator's subclasses usually provide the
  * implementation of this method.
  */
-abstract class Creator
+abstract class AbsCreator
 {
     /**
      * Note that the Creator may also provide some default implementation of the
      * factory method.
      */
-    abstract public function factoryMethod(): Product;
+    abstract public function factoryMethod(): IProduct;
 
     /**
      * Also note that, despite its name, the Creator's primary responsibility is
@@ -22,7 +22,7 @@ abstract class Creator
      * indirectly change that business logic by overriding the factory method
      * and returning a different type of product from it.
      */
-    public function someOperation(): string
+    public function generalOperation(): string
     {
         // Call the factory method to create a Product object.
         $product = $this->factoryMethod();
