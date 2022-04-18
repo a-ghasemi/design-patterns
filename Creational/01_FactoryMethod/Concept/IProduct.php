@@ -1,6 +1,6 @@
 <?php
 
-namespace Creational\FactoryMethod\Concept;
+namespace Concept;
 
 /**
  * The Product interface declares the operations that all concrete products must

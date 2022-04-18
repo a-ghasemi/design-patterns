@@ -1,6 +1,6 @@
 <?php
 
-namespace Creational\FactoryMethod\Concept;
+namespace Concept;
 
 /**
  * The client code works with an instance of a concrete creator, albeit through
