@@ -2,12 +2,16 @@
 
 namespace App;
 
+use Structure\Facebook;
+
 require_once './vendor/autoload.php';
 
 class Main
 {
-    public function run(){
-        printf('main in running');
+    public function run()
+    {
+        $item = new Facebook('LOGIN', 'PASSWORD');
+        $item->connect();
     }
 }
 
