@@ -6,6 +6,7 @@ require_once './vendor/autoload.php';
 
 use Structure\Facebook;
 use Structure\SocialNetwork;
+use Structure\Twitter;
 
 class Main
 {
@@ -26,7 +27,8 @@ class Main
 
     protected function setSocialNetwork()
     {
-        return new Facebook('LOGIN', 'PASSWORD');
+//        return new Facebook('LOGIN', 'PASSWORD');
+        return new Twitter('Username', 'PASSWORD');
     }
 }
 
