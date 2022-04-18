@@ -1,6 +1,6 @@
 <?php
 
-namespace Concept;
+namespace Concept\Structure;
 
 /**
  * The Creator class declares the factory method that is supposed to return an

@@ -1,6 +1,6 @@
 <?php
 
-namespace Concept;
+namespace Concept\Structure;
 
 /**
  * The Product interface declares the operations that all concrete products must

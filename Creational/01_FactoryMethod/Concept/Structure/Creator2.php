@@ -1,6 +1,6 @@
 <?php
 
-namespace Concept;
+namespace Concept\Structure;
 
 /**
  * Concrete Creators override the factory method in order to change the

@@ -12,7 +12,8 @@
   },
   "autoload": {
     "psr-4": {
-      "Concept\\": "."
+      "Concept\\": ".",
+      "Structure\\": "Structure"
     }
   }
 }

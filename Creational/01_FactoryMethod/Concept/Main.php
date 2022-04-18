@@ -2,6 +2,12 @@
 
 namespace Concept;
 
+require_once './vendor/autoload.php';
+
+use Concept\Structure\AbsCreator;
+use Concept\Structure\Creator1;
+use Concept\Structure\Creator2;
+
 /**
  * The client code works with an instance of a concrete creator, albeit through
  * its base interface. As long as the client keeps working with the creator via

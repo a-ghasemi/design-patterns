@@ -1,14 +1,14 @@
 <?php
 
-namespace Concept;
+namespace Concept\Structure;
 
 /**
  * Concrete Products provide various implementations of the Product interface.
  */
-class Product2 implements IProduct
+class Product1 implements IProduct
 {
     public function operation(): string
     {
-        return "{Result of the ConcreteProduct2}";
+        return "{Result of the ConcreteProduct1}";
     }
 }
