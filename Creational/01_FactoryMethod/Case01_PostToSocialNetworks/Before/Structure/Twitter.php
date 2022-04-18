@@ -2,7 +2,7 @@
 
 namespace Structure;
 
-class Twitter implements SocialNetwork
+class Twitter implements ISocialNetwork
 {
     protected $username;
     protected $password;

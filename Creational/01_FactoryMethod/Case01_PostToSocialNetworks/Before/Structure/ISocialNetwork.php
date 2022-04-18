@@ -2,7 +2,7 @@
 
 namespace Structure;
 
-interface SocialNetwork
+interface ISocialNetwork
 {
     public function connect();
 

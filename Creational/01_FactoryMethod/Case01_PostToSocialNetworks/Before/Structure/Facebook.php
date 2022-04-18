@@ -2,7 +2,7 @@
 
 namespace Structure;
 
-class Facebook implements SocialNetwork
+class Facebook implements ISocialNetwork
 {
     protected $login;
     protected $password;

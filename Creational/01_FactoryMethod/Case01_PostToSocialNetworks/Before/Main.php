@@ -5,12 +5,12 @@ namespace App;
 require_once './vendor/autoload.php';
 
 use Structure\Facebook;
-use Structure\SocialNetwork;
+use Structure\ISocialNetwork;
 use Structure\Twitter;
 
 class Main
 {
-    protected SocialNetwork $social_network;
+    protected ISocialNetwork $social_network;
 
     public function run()
     {
