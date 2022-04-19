@@ -1,2 +1,3 @@
-# Case title
-## Problem
+# DP Title
+## Also known as
+## Intent
