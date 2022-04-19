@@ -2,10 +2,10 @@
 
 namespace Concept;
 
-use Structure\DogHandler;
 use Structure\IHandler;
 use Structure\MonkeyHandler;
 use Structure\SquirrelHandler;
+use Structure\DogHandler;
 
 require_once './vendor/autoload.php';
 
