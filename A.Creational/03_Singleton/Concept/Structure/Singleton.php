@@ -15,7 +15,7 @@ class Singleton
      * this array will be an instance of a specific Singleton's subclass. You'll
      * see how this works in a moment.
      */
-    private static $instances = [];
+    private static $instances = null;
 
     /**
      * The Singleton's constructor should always be private to prevent direct
@@ -47,12 +47,18 @@ class Singleton
      */
     public static function getInstance(): Singleton
     {
-        $cls = static::class;
+/*        $cls = static::class;
         if (!isset(self::$instances[$cls])) {
             self::$instances[$cls] = new static();
         }
 
-        return self::$instances[$cls];
+        return self::$instances[$cls];*/
+
+        if(!isset(static::$instances)){
+            static::$instances = new static();
+        }
+
+        return static::$instances;
     }
 
     /**
